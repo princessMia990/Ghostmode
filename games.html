@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games | GhostMode 👻</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ghost" style="left:10%; animation-delay:0s;">👻</div>
+    <div class="ghost" style="left:80%; animation-delay:4s;">👻</div>
+    <div class="ghost" style="left:45%; animation-delay:7s;">👻</div>
+    <div id="mouseGhost">👻</div>
+    
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="games.html">Games</a>
+    <a href="secret.html">Secret Room</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+    <main>
+        <section id="games">
+
+        <h2>🎮 Ghost Games</h2>
+
+        <!-- GHOST HUNTING -->
+
+        <div class="game-box">
+
+            <h3>👻 Ghost Hunter</h3>
+
+            <p>
+                A ghost is hiding somewhere!
+                Can you find it?
+            </p>
+
+            <p id="gameMessage">
+                Press the button to search!
+            </p>
+
+            <button onclick="huntGhost()">
+                🔎 Find the Ghost
+            </button>
+
+            <button onclick="resetGame()">
+                🔄 Play Again
+            </button>
+
+            <p id="score">Ghosts Found: 0</p>
+
+        </div>
+
+        <!-- CATCH THE GHOST -->
+
+        <div class="game-box">
+
+            <h3>👻 Catch the Ghosts!</h3>
+
+            <p>Click all three ghosts to catch them!</p>
+
+            <div id="ghostContainer">
+
+                <button class="catchGhost">👻</button>
+
+                <button class="catchGhost">👻</button>
+
+                <button class="catchGhost">👻</button>
+
+            </div>
+
+            <h3 id="ghostScore">Ghosts Caught: 0 / 3</h3>
+
+            <button onclick="resetCatchGame()">
+                🔄 Restart Game
+            </button>
+
+        </div>
+
+    </section>
+    </main>
+    
+<footer>
+    <p>Created by Tammy © 2026 👻</p>
+    <p>Stay Spooky. Stay Creative.</p>
+</footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
